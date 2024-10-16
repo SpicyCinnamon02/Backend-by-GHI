@@ -15,12 +15,12 @@ const HomeHero = () => {
           Manage projects, streamline tasks, and grow your business effortlessly.
         </p>
         <div>
-        <button
-          className="px-3 py-2 lg:px-4 lg:py-2 text-[16px] bg-green-light text-white font-semibold rounded-lg shadow-md hover:bg-green-darker focus:outline-none hover:text-white focus:ring-2 focus:ring-opacity-75 transition duration-300"
-        >
-          Try for free
-        </button>
-      </div>
+          <button
+            className="px-3 py-2 lg:px-4 lg:py-2 text-[16px] bg-green-light text-white font-semibold rounded-lg shadow-md hover:bg-green-darker focus:outline-none hover:text-white focus:ring-2 focus:ring-opacity-75 transition duration-300"
+          >
+            Try for free
+          </button>
+        </div>
       </div>
     </div>
   )
