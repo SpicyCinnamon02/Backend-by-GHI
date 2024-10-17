@@ -9,9 +9,10 @@ const MobileNavbar = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+    
 
     return (
-        <div className="relative block lg:hidden ">
+        <div className="relative block lg:hidden overflow-x-hidden overflow-y-hidden">
             {/* Button for opening/closing the menu */}
             <button
                 onClick={toggleMenu}
@@ -26,7 +27,7 @@ const MobileNavbar = () => {
                     }`}
             >
                 {navLinks.map((link, i) => (
-                        <div className='flex justify-center items-center py-2'>
+                        <div className='absolute z-50 right-0 flex justify-center items-center py-2'>
                             <a
                                 href={link.path}
                                 className="hover:underline px-3 py-2 text-[15px] font-semibold uppercase text-black"
