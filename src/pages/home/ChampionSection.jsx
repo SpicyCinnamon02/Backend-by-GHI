@@ -5,7 +5,7 @@ import bgImage from "/src/assets/home-page/champion-app-mobile.png"
 const ChampionSection = () => {
     return (
         <div
-            className="h-[400px] lg:h-[90vh] py-[80px] sm:pt-[160px] sm:pb-[80px] bg-fill lg:bg-cover lg:bg-center bg-no-repeat flex justify-center items-center lg:items-end flex-col gap-10 lg:gap-5"
+            className="h-[500px] lg:h-[90vh] py-[80px] sm:pt-[160px] sm:pb-[80px] bg-fill lg:bg-cover lg:bg-center bg-no-repeat flex justify-center items-center lg:items-end flex-col gap-10 lg:gap-5"
             style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(${ChampBG})` }}
         >
             <div className='flex justify-center items-center lg:items-start flex-col w-[85%] lg:w-[45%] p-0 pt-[70px] lg:pt-[0] lg:pl-[50px] gap-5  lg:gap-8' >
