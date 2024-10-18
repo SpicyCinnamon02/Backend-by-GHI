@@ -13,7 +13,7 @@ const DigitalCard = () => {
                 <h1 className='text-[25px] lg:text-[60px] font-bold text-green-darker tracking-tight leading-tighter lg:text-left text-center'>
                     Send & Share your<br></br> Digital Business Card
                 </h1>
-                <p className='text-[15px] w-[65%] lg:w-[90%] lg:text-[25px] font-medium text-center lg:text-left text-green-dark tracking-tight'>
+                <p className='text-[15px] w-[65%] lg:w-[70%] lg:text-[25px] font-medium text-center lg:text-left text-green-dark tracking-tight'>
                     Effortlessly share your professional identity and make lasting connections with customizable digital business cards
                 </p>
                 <img src={digitalMobile} alt=""
