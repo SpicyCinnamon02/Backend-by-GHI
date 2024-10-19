@@ -6,13 +6,15 @@ import HomeHero from './pages/home/HomeHero'
 import ChampionSection from './pages/home/ChampionSection'
 import DigitalCard from './pages/home/DigitalCard'
 import Canvass from './pages/home/Canvass'
+import Separator from './pages/home/Separator'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar />
     <HomeHero />
-    <ChampionSection />
+    <Separator />
     <DigitalCard />
     <Canvass />
+    <ChampionSection />
   </StrictMode>,
 )
