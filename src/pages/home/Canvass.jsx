@@ -13,7 +13,7 @@ const Canvass = () => {
                     Simplify Canvassing<br></br> with Smart Solutions
                 </h1>
                 <p className='text-[15px] w-[65%] lg:w-[75%] lg:text-[25px] font-medium text-center lg:text-left text-green-dark tracking-tight'>
-                    Map, track, and organize your canvassing efforts using intuitive tools designed to maximize outreach efficiency, enhance team coordination, and provide real-time insights for better decision-making.
+                Map, track, and manage your canvassing efforts with intuitive tools for maximum outreach efficiency
                 </p>
                 <img src={canvassMobile} alt=""
                     className='h-[180px] block lg:hidden'
