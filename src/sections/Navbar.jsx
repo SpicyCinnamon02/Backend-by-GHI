@@ -24,7 +24,7 @@ export const navLinks = [
 
 const Navbar = () => {
     return (
-        <Container className='absolute z-40 w-full flex justify-between items-center lg:items-center py-5 lg:gap-5 gap-0 shadow-lg bg-white'>
+        <Container className='fixed lg:absolute z-40 w-full flex justify-between items-center lg:items-center py-5 lg:gap-5 gap-0 shadow-lg bg-white'>
             <div className='flex justify-center items-center w-[30%] lg:w-fit'>
                 <img src={navLogo} alt="" className='max-h-[60px] lg:h-[50px] h-[30px]' />
             </div>
