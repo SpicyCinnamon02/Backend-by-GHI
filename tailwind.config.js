@@ -59,6 +59,7 @@ export default {
         "yellow-primary": "#f2c800",
         "yellow-light": "#FCDE70",
         "yellow-lighter": "#FCCD2A",
+        "yellow-dark": "#f7bb05",
         "green-dark" : "#00712D",
         "orange-dark" : "#FF9100",
       },
@@ -81,6 +82,7 @@ export default {
     },
   },
   plugins: [
+    require('tailwindcss-textshadow'),
     function ({ addUtilities }) {
       const newUtilities = {
         '.text-stroke-1': {
