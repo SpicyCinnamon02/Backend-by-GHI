@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../elements/Container'
-import navLogo from '../../src/assets/navbar/hg-digital.png'
+import navLogo from '../../src/assets/navbar/backend-logo.png'
 import MobileNavbar from './MobileNavbar'
 
 export const navLinks = [

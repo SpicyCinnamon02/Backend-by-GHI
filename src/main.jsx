@@ -7,6 +7,7 @@ import ChampionSection from './pages/home/ChampionSection'
 import DigitalCard from './pages/home/DigitalCard'
 import Canvass from './pages/home/Canvass'
 import Separator from './pages/home/Separator'
+import Rep from './pages/home/Rep'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
     <Separator />
     <DigitalCard />
     <Canvass />
+    <Rep />
     <ChampionSection />
   </StrictMode>,
 )
