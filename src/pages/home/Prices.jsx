@@ -3,8 +3,8 @@ import { FaCheck,FaPlus } from "react-icons/fa";
 
 export const priceOpt = [
     {
-        title: 'Trial',
-        price: '7 Days Free Trial',
+        title: 'Free Trial',
+        price: '7 Days',
         description: 'Try our tools and services',
         inclusion: ['Try out all the Standard Tools'],
         button: 'Free',
@@ -27,15 +27,15 @@ export const priceOpt = [
 const Prices = () => {
     return (
         <div className='flex justify-center items-center gap-5 py-10'>
-            {priceOpt.map((prices, i) => (
+            {priceOpt.map((prices) => (
                 <div className='flex justify-between items-start flex-col shadow-lg h-[700px] w-[400px] border border-green-light rounded-xl lg:px-[50px] lg:py-[30px] transform hover:scale-105 transition-all duration-300'>
-                    <div>
-                        <p className='text-[20px] lg:text-[30px] font-black text-green-darker'>{prices.title}</p>
+                    <div className='border-b border-gray-400 pb-[20px]'>
+                        <p className='text-[20px] lg:text-[40px] font-black text-green-darker'>{prices.title}</p>
                         <p className='text-20px '>{prices.description}</p>
                     </div>
                     <div className='flex justify-center items-start flex-col lg:gap-2'>
-                        {prices.inclusion.map((features, j) => (
-                            <div key={j} className='flex items-center'>
+                        {prices.inclusion.map((features, i) => (
+                            <div key={i} className='flex items-center'>
                                 {prices.title === 'Pro' && !priceOpt[1].inclusion.includes(features) ? (
                                     <FaPlus className='text-yellow-dark text-[20px] mr-2' />
                                 ) : (
