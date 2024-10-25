@@ -46,7 +46,7 @@ const Features = () => {
                                 </React.Fragment>
                             ))}
                         </h1>
-                        <p className='text-[15px] w-[65%] lg:w-[70%] lg:text-[22px] font-medium text-center lg:text-left text-green-dark tracking-tight pt-0 lg:pt-[20px]'>
+                        <p className='text-[15px] w-[70%] lg:w-[70%] lg:text-[22px] font-medium text-center lg:text-left text-green-dark tracking-tight pt-0 lg:pt-[20px]'>
                             {data.subtitle}
                         </p>
                     </div>
