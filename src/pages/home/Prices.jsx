@@ -28,7 +28,7 @@ const Prices = () => {
     return (
         <div className='flex justify-center items-center flex-wrap gap-5 py-10'>
             {priceOpt.map((prices) => (
-                <div className='flex justify-between items-center lg:items-start flex-col shadow-lg h-[600px] w-[350px] lg:h-[700px] lg:w-[400px] border border-green-light rounded-xl py-5 lg:px-[50px] lg:py-[30px] transform lg:hover:scale-105 transition-all duration-300'>
+                <div className='flex justify-between items-center lg:items-start flex-col shadow-lg h-[550px] w-[350px] lg:h-[700px] lg:w-[400px] border border-green-light rounded-xl py-5 lg:px-[50px] lg:py-[30px] transform lg:hover:scale-105 transition-all duration-300'>
                     <div className='border-b border-gray-400 pb-[20px] flex flex-col justify-center items-center lg:justify-start lg:items-start'>
                         <p className='text-[28px] lg:text-[40px] font-black text-green-darker'>{prices.title}</p>
                         <p className='text-20px '>{prices.description}</p>
