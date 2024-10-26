@@ -6,6 +6,7 @@ import Separator from './Separator'
 import PriceTable from './PriceTable'
 import Features from './Features'
 import Prices from './Prices'
+import Footer from '../../sections/Footer'
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <ChampionSection />
             <PriceTable />
             <Prices />
+            <Footer />
         </>
 
     )

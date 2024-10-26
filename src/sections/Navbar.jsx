@@ -21,6 +21,16 @@ export const navLinks = [
         path: '/contact-us'
     },
 ]
+export const buttons = [
+    {
+        label: 'Log in',
+        classes: 'px-7 py-2 lg:px-4 w-auto h-[40px] w-[100px] lg:w-[100px] lg:py-2 text-[14px] text-green-light border-2 border-green-light font-semibold rounded-lg shadow-md hover:bg-green-light focus:outline-none hover:text-white focus:ring-2 focus:ring-opacity-75 transition duration-300',
+    },
+    {
+        label: 'Try for free',
+        classes: 'px-3 py-2 lg:px-4 lg:py-2 h-[40px] w-[100px] lg:h-auto lg:w-auto text-[14px] bg-green-light text-white font-semibold rounded-lg shadow-md hover:bg-green-darker focus:outline-none hover:text-white focus:ring-2 focus:ring-opacity-75 transition duration-300',
+    },
+];
 
 const Navbar = () => {
     return (
@@ -42,16 +52,11 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className='flex justify-center items-center gap-3'>
-                    <button
-                        className="px-3 py-2 lg:px-4 w-auto lg:w-[100px] lg:py-[7px] text-[14px] text-green-light border-2 border-green-light font-semibold rounded-lg shadow-md hover:bg-green-light focus:outline-none hover:text-white focus:ring-2 focus:ring-opacity-75 transition duration-300"
-                    >
-                        Log in
-                    </button>
-                    <button
-                        className="px-3 py-2 lg:px-4 lg:py-2 text-[14px] bg-green-light text-white font-semibold rounded-lg shadow-md hover:bg-green-darker focus:outline-none hover:text-white focus:ring-2 focus:ring-opacity-75 transition duration-300"
-                    >
-                        Try for free
-                    </button>
+                    {buttons.map((button) => (
+                        <button className={button.classes}>
+                            {button.label}
+                        </button>
+                    ))}
                 </div>
             </div>
             <MobileNavbar />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
-import { navLinks } from './Navbar';
+import { buttons, navLinks } from './Navbar';
 
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +34,13 @@ const MobileNavbar = () => {
                             </a>
                         </div>
                     ))}
+                <div className='flex justify-center items-center flex-col lg:flex-row gap-3 pb-5 lg:pb-0 pt-5 lg:pt-0'>
+                    {buttons.map((button) => (
+                        <button className={button.classes}>
+                            {button.label}
+                        </button>
+                    ))}
+                </div>
             </div>
         </div>
     );
