@@ -24,7 +24,7 @@ export const navLinks = [
 export const buttons = [
     {
         label: 'Log in',
-        classes: 'px-7 py-2 lg:px-4 w-auto h-[40px] w-[100px] lg:w-[100px] lg:py-2 text-[14px] text-green-light border-2 border-green-light font-semibold rounded-lg shadow-md hover:bg-green-light focus:outline-none hover:text-white focus:ring-2 focus:ring-opacity-75 transition duration-300',
+        classes: 'px-7 py-2 lg:px-4 w-auto h-[40px] w-[100px] lg:w-[100px] lg:py-2 text-[14px] text-green-light border-2 border-green-light box-border font-semibold rounded-lg shadow-md hover:bg-green-light focus:outline-none hover:text-white focus:ring-2 focus:ring-opacity-75 transition duration-300',
     },
     {
         label: 'Try for free',

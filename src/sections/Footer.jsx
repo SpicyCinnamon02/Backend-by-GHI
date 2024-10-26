@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
 
 export const footLinks = [
     {
@@ -29,10 +29,10 @@ export const footLinks = [
     {
         title: 'Socials',
         icons: [
-            'Facebook',
-            'Instagram',
-            'Youtube',
-            'Twitter'
+            { component: FaFacebook, link: 'https://facebook.com' },
+            { component: FaInstagram, link: 'https://instagram.com' },
+            { component: FaYoutube, link: 'https://youtube.com' },
+            { component: FaTwitter, link: 'https://twitter.com' }
         ]
     }
 ]
@@ -40,40 +40,54 @@ const Footer = () => {
     return (
         <footer className="bg-[#08291e] text-white py-10 px-5 md:px-20">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-                {footLinks.map((section) => (
-                    <div>
+                {footLinks.map((section, sectionIdx) => (
+                    <div key={sectionIdx}>
                         <h3 className="text-lg font-semibold mb-4">{section.title}</h3>
+                        
                         {section.links && (
-                            <>
-                                {section.links.map((link) => (
-                                    <p className="mb-2">
+                            <div>
+                                {section.links.map((link, i) => (
+                                    <p key={i} className="mb-2 hover:text-gray-300 cursor-pointer">
                                         {link}
                                     </p>
                                 ))}
-                            </>
+                            </div>
                         )}
+
                         {section.info && (
-                            <>
-                                {section.info.map((item) => (
-                                    <p className="mb-2 text-sm">
+                            <div>
+                                {section.info.map((item, i) => (
+                                    <p key={i} className="mb-2 text-sm cursor-pointer">
                                         {item}
                                     </p>
                                 ))}
-                            </>
+                            </div>
                         )}
+
                         {section.icons && (
                             <div className="flex space-x-4 mt-2">
-                                {section.icons.map((icon) => (
-                                    <span className="cursor-pointer">
-                                        {icon}
-                                    </span>
-                                ))}
+                                {section.icons.map((iconObj, i) => {
+                                    const IconComponent = iconObj.component;
+                                    return (
+                                        <a
+                                            key={i}
+                                            href={iconObj.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-2xl hover:text-gray-300 cursor-pointer"
+                                        >
+                                            <IconComponent />
+                                        </a>
+                                    );
+                                })}
                             </div>
                         )}
                     </div>
                 ))}
             </div>
-
+            <div className="mt-10 text-center text-gray-400 text-sm">
+                &copy; {new Date().getFullYear()} Green Home Improvements. All rights reserved.
+            </div>
         </footer>
     )
 }
