@@ -10,6 +10,10 @@ export default {
         'tighter': '1',
         'extra-loose': '2.5',
       },
+      boxShadow: {
+        'custom-light': '0 4px 6px rgba(0, 0, 0, 0.1)',
+        'custom-dark': '0 10px 15px rgba(0, 0, 0, 0.3)',
+      },
       textStrokeWidth: {
         '1': '1px',
         '2': '2px',
