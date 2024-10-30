@@ -40,7 +40,7 @@ const Prices = () => {
                         key={index}
                         className={`relative flex flex-col justify-between items-center lg:items-start shadow-lg ${
                             prices.title === 'Pro' ? 'bg-green-primary text-white' : 'bg-white text-green-darker'
-                        } h-[550px] w-[350px] lg:h-[700px] lg:w-[400px] rounded-xl py-5 lg:px-[50px] lg:py-[30px] transform lg:hover:scale-105 transition-all duration-300`}
+                        } h-[570px] w-[350px] lg:h-[700px] lg:w-[400px] rounded-xl py-5 lg:px-[50px] lg:py-[30px] transform lg:hover:scale-105 transition-all duration-300`}
                     >
                         {prices.title === 'Pro' && (
                             <div className="absolute top-[-20px] right-[-10px] bg-yellow-500 text-white px-4 py-1 rounded-tl-lg rounded-tr-lg rounded-br-lg font-semibold text-[14px] lg:text-[16px] shadow-lg">
