@@ -15,7 +15,7 @@ export const featuresData = [
     {
         name: 'Biz Card by GHI',
         title: 'Send & Share your\n Digital Business Card',
-        subtitle: 'Effortlessly share your professional identity and make lasting connections with customizable digital business cards',
+        subtitle: 'Effortlessly share your professional identity with customizable digital business cards',
         image: digitalMobile
     },
     {
@@ -23,6 +23,24 @@ export const featuresData = [
         title: 'Simplify Canvassing\n with Smart Solutions',
         subtitle: 'Map, track, and manage your canvassing efforts with intuitive tools for maximum outreach efficiency',
         image: canvassMobile
+    },
+    {
+        name: 'Rep Card by GHI',
+        title: 'Discover Rep Cards for\n Ratings and Reviews',
+        subtitle: 'View ratings, reviews, and achievements all in one place for a complete reputation overview.',
+        image: repImage
+    },
+    {
+        name: 'Rep Card by GHI',
+        title: 'Discover Rep Cards for\n Ratings and Reviews',
+        subtitle: 'View ratings, reviews, and achievements all in one place for a complete reputation overview.',
+        image: repImage
+    },
+    {
+        name: 'Rep Card by GHI',
+        title: 'Discover Rep Cards for\n Ratings and Reviews',
+        subtitle: 'View ratings, reviews, and achievements all in one place for a complete reputation overview.',
+        image: repImage
     },
     {
         name: 'Rep Card by GHI',
@@ -46,7 +64,7 @@ const Features = () => {
                 ref={swiperRef}
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={50}
-                slidesPerView={1}
+                slidesPerView={3}
                 navigation={false}
                 pagination={false}
                 speed={900}
@@ -54,18 +72,18 @@ const Features = () => {
                     delay: 5000,
                     disableOnInteraction: false,
                 }}
-                className="h-[450px] lg:h-[auto] py-[80px] lg:w-[60%]"
+                className="h-[450px] lg:h-[auto] py-[80px] lg:w-[90%] flex justify-center items-center"
                 onSlideChange={handleSlideChange}
             >
                 {featuresData.map((data, i) => (
                     <SwiperSlide key={i}>
                         <div className='flex justify-center items-center flex-col gap-10 pt-[20px] pb-[10px] lg:pb-[20px]'>
-                            <div className=" bg-white rounded-xl shadow-lg border p-6 border-gray-300 flex justify-center items-center flex-col w-[85%] lg:w-[600px] lg:h-[650px]lg:pt-[0] gap-5 lg:gap-0">
+                            <div className=" bg-white rounded-xl shadow-lg border p-6 border-gray-300 flex justify-center items-center flex-col w-[85%] lg:w-[400px] lg:h-[650px]lg:pt-[0] gap-5 lg:gap-0">
                                 <p className="text-[14px] lg:text-[19px] uppercase font-semibold tracking-tight text-center text-yellow-dark text-shadow-sm">
                                     {data.name}
                                 </p>
                                 <img src={data.image} alt="" className="h-[180px] lg:h-[400px]" />
-                                <h1 className="text-[22px] lg:text-[30px] font-bold text-green-darker text-center tracking-tight leading-tighter text-shadow-sm">
+                                <h1 className="text-[22px] lg:text-[24px] font-bold text-green-darker text-center tracking-tight leading-tighter text-shadow-sm">
                                     {data.title.split('\n').map((line, index) => (
                                         <React.Fragment key={index}>
                                             {line}
